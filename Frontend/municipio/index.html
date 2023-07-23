@@ -93,18 +93,23 @@
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h1 class="modal-title fs-5 modaltitulo" id="exampleModalLabel">Agregar Departamento</h1>
+            <h1 class="modal-title fs-5 modaltitulo" id="exampleModalLabel">Agregar Municipio</h1>
             </div>
             <div class="modal-body">
-                <form action="" class="formularios" id="formAddDepartamento">
+                <form action="" class="formularios" id="formAddMunicipio">
                     <div class="mb-3">
-                        <label for="" class="form-label">Nombre Departamento : </label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre de departamento">
+                        <label for="" class="form-label">Nombre Municipio : </label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre del municipio">
                     </div>
                     <div class="mb-3">
                         <label for="" class="form-label">Id : </label>
                         <input type="number" class="form-control" id="id" placeholder="Ingrese el id">
                     </div>
+                    <div class="mb-3">
+                        <label for="departamentoSelect" class="form-label">Departamento:</label>
+                        <select class="form-select" id="departamentoSelect">
+                        </select>
+                      </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary btnForm" data-bs-dismiss="modal">Cerrar</button>
                         <button type="input" class="btn btn-primary btnForm">Agregar</button>
@@ -120,19 +125,25 @@
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h1 class="modal-title fs-5 modaltitulo" id="exampleModalLabel">Editar Departamento</h1>
+            <h1 class="modal-title fs-5 modaltitulo" id="exampleModalLabel">Editar Municipio</h1>
             </div>
             <div class="modal-body">
-                <form action="" class="formularios" id="formEditDepartamento">
+                <form action="" class="formularios" id="formEditMunicipio">
                     <input type="hidden" id="idEdit" name="">
                     <div class="mb-3">
-                        <label for="" class="form-label">Nombre Departamento : </label>
+                        <label for="" class="form-label">Nombre Municipio : </label>
                         <input type="text" class="form-control" id="nombreEdit">
                     </div>
                     <div class="mb-3">
                         <label for="" class="form-label">Id : </label>
                         <input type="number" class="form-control" id="idEdit">
                     </div>
+                    <div class="mb-3">
+                        <label for="departamentoSelect" class="form-label">Departamento:</label>
+                        <select class="form-select" id="departamentoSelect">
+                        </select>
+                      </div>
+                      
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary btnForm" data-bs-dismiss="modal">Cerrar</button>
                         <button type="input" class="btn btn-primary btnForm">Actualizar</button>

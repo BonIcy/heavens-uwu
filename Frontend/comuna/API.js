@@ -1,21 +1,22 @@
-let urlAll = "http://localhost:5000/api/departamento/all";
-let urlAdd = "http://localhost:5000/api/departamento/add";
-let urlDelete = "http://localhost:5000/api/departamento/del";
-let urlOne = "http://localhost:5000/api/departamento/one";
-let urlUpdate = "http://localhost:5000/api/departamento/upd";
+let urlAll = "http://localhost:5000/api/comuna/all";
+let urlAdd = "http://localhost:5000/api/comuna/add";
+let urlDelete = "http://localhost:5000/api/comuna/del";
+let urlOne = "http://localhost:5000/api/comuna/one";
+let urlUpdate = "http://localhost:5000/api/comuna/upd";
 
+let urlMun = "http://localhost:5000/api/municipio/all"
 //Read
-export let allDepartamentos = async () =>{
+export let allComunas = async () =>{
     try {
-        let departamentos = await fetch(urlAll);
-        let infoDepartamentos = departamentos.json();
-        return infoDepartamentos;
+        let comuna = await fetch(urlAll);
+        let infoComunas = comuna.json();
+        return infoComunas;
     } catch (error) {
         console.log(error);
     }
 }
 //Insert
-export let addDepartamento = async (registro) => {
+export let addComuna = async (registro) => {
     try {
       await fetch(`${urlAdd}/`, {
         method: "POST",
@@ -30,7 +31,7 @@ export let addDepartamento = async (registro) => {
     }
 };
 //Delete
-export let deleteDepartamento = async (id) =>{
+export let deleteComuna = async (id) =>{
     try {
         await fetch(`${urlDelete}/${id}`,{
             method: "DELETE",
@@ -54,7 +55,7 @@ export async function selectOne(id) {
     }
 };
 //Update
-export async function updateDepartamento(data,id){
+export async function updateComuna(data,id){
     try {
             await fetch(`${urlUpdate}/${id}`,{
             method: "PUT",
@@ -64,6 +65,16 @@ export async function updateDepartamento(data,id){
             },
         });
         window.location.href = "index.html"
+    } catch (error) {
+        console.log(error);
+    }
+};
+//obtener todos los municipios
+export let allMunicipios = async () => {
+    try {
+        let municipios = await fetch(urlMun);
+        let infoMunicipios = municipios.json();
+        return infoMunicipios;
     } catch (error) {
         console.log(error);
     }

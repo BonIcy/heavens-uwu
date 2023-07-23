@@ -1,21 +1,20 @@
-let urlAll = "http://localhost:5000/api/departamento/all";
-let urlAdd = "http://localhost:5000/api/departamento/add";
-let urlDelete = "http://localhost:5000/api/departamento/del";
-let urlOne = "http://localhost:5000/api/departamento/one";
-let urlUpdate = "http://localhost:5000/api/departamento/upd";
-
+let urlAll = "http://localhost:5000/api/barrio/all";
+let urlAdd = "http://localhost:5000/api/barrio/add";
+let urlDelete = "http://localhost:5000/api/barrio/del";
+let urlOne = "http://localhost:5000/api/barrio/one";
+let urlUpdate = "http://localhost:5000/api/barrio/upd";
 //Read
-export let allDepartamentos = async () =>{
+export let allBarrios = async () =>{
     try {
-        let departamentos = await fetch(urlAll);
-        let infoDepartamentos = departamentos.json();
-        return infoDepartamentos;
+        let barrios = await fetch(urlAll);
+        let infoBarrios = barrios.json();
+        return infoBarrios;
     } catch (error) {
         console.log(error);
     }
 }
 //Insert
-export let addDepartamento = async (registro) => {
+export let addBarrio = async (registro) => {
     try {
       await fetch(`${urlAdd}/`, {
         method: "POST",
@@ -30,7 +29,7 @@ export let addDepartamento = async (registro) => {
     }
 };
 //Delete
-export let deleteDepartamento = async (id) =>{
+export let deleteBarrio = async (id) =>{
     try {
         await fetch(`${urlDelete}/${id}`,{
             method: "DELETE",
@@ -54,7 +53,7 @@ export async function selectOne(id) {
     }
 };
 //Update
-export async function updateDepartamento(data,id){
+export async function updateBarrio(data,id){
     try {
             await fetch(`${urlUpdate}/${id}`,{
             method: "PUT",
