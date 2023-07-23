@@ -93,27 +93,38 @@
         <span class="addCategory__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
     </button>
     </div>
-
     <!-- Modal Insertar -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h1 class="modal-title fs-5 modaltitulo" id="exampleModalLabel">Agregar Comuna</h1>
+            <h1 class="modal-title fs-5 modaltitulo" id="exampleModalLabel">Agregar Creyente</h1>
             </div>
             <div class="modal-body">
-                <form action="" class="formularios" id="formAddComuna">
+                <form action="" class="formularios" id="formAddCreyente">
                     <div class="mb-3">
-                        <label for="" class="form-label">Nombre Comuna : </label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre de la Comuna">
+                        <label for="" class="form-label">Nombre Creyente : </label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre de Creyente">
                     </div>
                     <div class="mb-3">
                         <label for="" class="form-label">Id : </label>
                         <input type="number" class="form-control" id="id" placeholder="Ingrese el id">
                     </div>
                     <div class="mb-3">
-                        <label for="municipioSelect" class="form-label">ID Municipio:</label>
-                        <select class="form-control" id="municipioSelect">
+                        <label for="" class="form-label">Email : </label>
+                        <input type="email" class="form-control" id="email" placeholder="Correo electronico ">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Numero de celular : </label>
+                        <input type="number" class="form-control" id="nroCelular" placeholder="Numero de celular">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Direccion: </label>
+                        <input type="text" class="form-control" id="direccion" placeholder="Direccion">
+                    </div>
+                    <div class="mb-3">
+                        <label for="barrioSelect" class="form-label">ID Barrio:</label>
+                        <select class="form-control" id="barrioSelect">
                         </select>
                     </div>
                     <div class="modal-footer">
@@ -131,13 +142,13 @@
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h1 class="modal-title fs-5 modaltitulo" id="exampleModalLabel">Editar Comuna</h1>
+            <h1 class="modal-title fs-5 modaltitulo" id="exampleModalLabel">Editar Creyente</h1>
             </div>
             <div class="modal-body">
-                <form action="" class="formularios" id="formEditComuna">
+                <form action="" class="formularios" id="formEditCreyente">
                     <input type="hidden" id="idEdit" name="">
                     <div class="mb-3">
-                        <label for="" class="form-label">Nombre Comuna : </label>
+                        <label for="" class="form-label">Nombre Creyente : </label>
                         <input type="text" class="form-control" id="nombreEdit">
                     </div>
                     <div class="mb-3">
@@ -145,8 +156,20 @@
                         <input type="number" class="form-control" id="idEdit">
                     </div>
                     <div class="mb-3">
-                        <label for="municipioSelect" class="form-label">ID Municipio:</label>
-                        <select class="form-control" id="municipioSelect">
+                        <label for="" class="form-label">Email : </label>
+                        <input type="email" class="form-control" id="emailEdit" placeholder="Correo electronico ">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Numero de celular : </label>
+                        <input type="number" class="form-control" id="nroCelularEdit" placeholder="Numero de celular">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Direccion: </label>
+                        <input type="text" class="form-control" id="direccionEdit" placeholder="Direccion">
+                    </div>
+                    <div class="mb-3">
+                        <label for="barrioSelect" class="form-label">ID Barrio:</label>
+                        <select class="form-control" id="barrioSelectEdit">
                         </select>
                     </div>
                     <div class="modal-footer">
